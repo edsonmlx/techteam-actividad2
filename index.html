@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TechTeam | Proyecto Web</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===== HEADER (Rama: feature/ENCABEZADO - Líder: Edson Mamani Laura) ===== -->
+  <header id="header">
+    <nav class="navbar">
+      <div class="logo">
+        <span class="logo-icon">⟨/⟩</span>
+        <span class="logo-text">TechTeam</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#equipo">Equipo</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+      <button class="btn-nav" onclick="scrollToSection('contacto')">Únete</button>
+      <button class="hamburger" onclick="toggleMenu()" aria-label="Menú">☰</button>
+    </nav>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section id="inicio" class="hero">
+    <div class="hero-content">
+      <span class="hero-badge">Actividad #2 — Git & GitHub</span>
+      <h1 class="hero-title">Construimos el<br><span class="accent">futuro digital</span><br>en equipo</h1>
+      <p class="hero-sub">Un proyecto colaborativo desarrollado con HTML, CSS, JavaScript y Python. Control de versiones con Git y GitHub.</p>
+      <div class="hero-buttons">
+        <button class="btn-primary" onclick="scrollToSection('servicios')">Ver proyecto</button>
+        <button class="btn-outline" onclick="scrollToSection('equipo')">Conoce al equipo</button>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="code-card">
+        <div class="code-header">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+          <span class="code-title">app.py</span>
+        </div>
+        <pre class="code-body"><code><span class="kw">def</span> <span class="fn">bienvenida</span>(nombre):
+    <span class="kw">return</span> <span class="str">f"Hola, {nombre}!"</span>
+
+equipo = [
+    <span class="str">"Edson Mamani"</span>,
+    <span class="str">"Jose Ventura"</span>
+]
+
+<span class="kw">for</span> m <span class="kw">in</span> equipo:
+    <span class="kw">print</span>(bienvenida(m))</code></pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BODY - SERVICIOS (Rama: feature/CUERPO - Colaborador 1: Jose Ventura Poma) ===== -->
+  <section id="servicios" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Lo que hacemos</span>
+        <h2>Nuestros Servicios</h2>
+        <p>Tecnologías que dominamos y aplicamos en cada proyecto.</p>
+      </div>
+      <div class="cards-grid">
+        <div class="card">
+          <div class="card-icon">🌐</div>
+          <h3>Desarrollo Web</h3>
+          <p>Páginas modernas, responsivas y accesibles con HTML5 y CSS3 de última generación.</p>
+          <ul class="card-tags">
+            <li>HTML5</li><li>CSS3</li><li>Responsive</li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="card-icon">⚡</div>
+          <h3>Interactividad JS</h3>
+          <p>Experiencias dinámicas e interactivas que mejoran la experiencia del usuario.</p>
+          <ul class="card-tags">
+            <li>JavaScript</li><li>DOM</li><li>ES6+</li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="card-icon">🐍</div>
+          <h3>Backend Python</h3>
+          <p>Lógica de servidor eficiente y scripts de automatización con Python.</p>
+          <ul class="card-tags">
+            <li>Python</li><li>Flask</li><li>Scripts</li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="card-icon">🔧</div>
+          <h3>Control de Versiones</h3>
+          <p>Gestión profesional del código con Git y GitHub, ramas y Pull Requests.</p>
+          <ul class="card-tags">
+            <li>Git</li><li>GitHub</li><li>Branches</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECCIÓN INTERACTIVA JS ===== -->
+  <section class="section section-dark">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Interactividad</span>
+        <h2>Prueba Python desde el navegador</h2>
+        <p>Simula la función de bienvenida de nuestro script Python.</p>
+      </div>
+      <div class="demo-box">
+        <div class="demo-input">
+          <label for="nombre-input">Tu nombre:</label>
+          <div class="input-row">
+            <input type="text" id="nombre-input" placeholder="Escribe tu nombre..." maxlength="30" />
+            <button class="btn-primary" onclick="ejecutarPython()">Ejecutar</button>
+          </div>
+        </div>
+        <div class="terminal" id="terminal">
+          <div class="terminal-header">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+            <span class="terminal-title">terminal — python app.py</span>
+          </div>
+          <div class="terminal-body" id="terminal-output">
+            <p class="term-prompt">$ python app.py</p>
+            <p class="term-hint">→ Escribe un nombre y presiona Ejecutar</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EQUIPO ===== -->
+  <section id="equipo" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Quiénes somos</span>
+        <h2>El Equipo</h2>
+      </div>
+      <div class="team-grid">
+        <div class="team-card team-leader">
+          <div class="team-avatar">EM</div>
+          <div class="team-info">
+            <span class="team-role">👑 Líder del Proyecto</span>
+            <h3>Edson Mamani Laura</h3>
+            <p>Responsable del repositorio, rama <code>feature/ENCABEZADO</code>, revisión de Pull Requests y merge final.</p>
+            <div class="team-branches">
+              <span class="branch">main</span>
+              <span class="branch">feature/ENCABEZADO</span>
+            </div>
+          </div>
+        </div>
+        <div class="team-card">
+          <div class="team-avatar">JV</div>
+          <div class="team-info">
+            <span class="team-role">🤝 Colaborador 1</span>
+            <h3>Jose Ventura Poma</h3>
+            <p>Desarrollo del cuerpo principal del sitio, rama <code>feature/CUERPO</code>, secciones informativas y contenido.</p>
+            <div class="team-branches">
+              <span class="branch">feature/CUERPO</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER (Rama: feature/PIE-PAGINA) ===== -->
+  <footer id="contacto">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <div class="logo">
+          <span class="logo-icon">⟨/⟩</span>
+          <span class="logo-text">TechTeam</span>
+        </div>
+        <p>Proyecto académico desarrollado para la Actividad #2 — Control de versiones con Git & GitHub.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Contacto</h4>
+        <ul>
+          <li>📧 edson.mamani@email.com</li>
+          <li>📧 jose.ventura@email.com</li>
+          <li>📍 Bolivia</li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Redes Sociales</h4>
+        <div class="social-links">
+          <a href="#" class="social-btn">GitHub</a>
+          <a href="#" class="social-btn">LinkedIn</a>
+          <a href="#" class="social-btn">Twitter</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Tecnologías</h4>
+        <ul>
+          <li>HTML5 · CSS3 · JavaScript</li>
+          <li>Python</li>
+          <li>Git · GitHub</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 TechTeam — Edson Mamani Laura & Jose Ventura Poma</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
