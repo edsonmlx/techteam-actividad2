@@ -10,7 +10,8 @@
 | Integrante | Rol | Rama |
 |---|---|---|
 | **Edson Mamani Laura** | 👑 Líder del Proyecto | `main` · `feature/ENCABEZADO` |
-| **Jose Ventura Poma** | 🤝 Colaborador 1 | `feature/CUERPO` |
+| **Angel Jasmany Vargas Mamani** | 🤝 Colaborador 1 | `feature/CUERPO` |
+| **Jose Andres Ventura Poma** | 🤝 Colaborador 2 | `feature/PIE-PAGINA` |
 
 ---
 
@@ -44,16 +45,16 @@ proyecto/
 
 ```bash
 main                    # Rama principal (producción)
-feature/ENCABEZADO      # Líder — Header y navegación
-feature/CUERPO          # Colaborador 1 — Contenido principal
-feature/PIE-PAGINA      # Footer e información de contacto
+feature/ENCABEZADO      # Líder Edson — Header y navegación
+feature/CUERPO          # Angel — Contenido principal
+feature/PIE-PAGINA      # Jose — Footer e información de contacto
 ```
 
 ### Comandos utilizados
 
 ```bash
 # Clonar el repositorio
-git clone https://github.com/usuario/techteam-actividad2.git
+git clone https://github.com/edsonmlx/techteam-actividad2.git
 
 # Crear y cambiar de rama
 git checkout -b feature/ENCABEZADO
@@ -124,4 +125,4 @@ docs: actualizar README con estructura del proyecto
 
 ---
 
-*© 2025 TechTeam — Edson Mamani Laura & Jose Ventura Poma*
+*© 2025 TechTeam — Edson Mamani Laura · Angel Jasmany Vargas Mamani · Jose Andres Ventura Poma*
