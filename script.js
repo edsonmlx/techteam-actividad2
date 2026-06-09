@@ -1,7 +1,7 @@
 // =============================================
 //  TECHTEAM — script.js
 //  Actividad #2 | Interactividad JS
-//  Edson Mamani Laura & Jose Ventura Poma
+//  Edson Mamani Laura, Angel Jasmany Vargas Mamani & Jose Ventura Poma
 // =============================================
 
 // --- Smooth scroll helper ---
@@ -38,7 +38,7 @@ function ejecutarPython() {
   }
 
   // Simular el código Python de app.py
-  const equipo = ["Edson Mamani", "Jose Ventura"];
+  const equipo = ["Edson Mamani", "Angel Vargas", "Jose Ventura"];
   const mensajes = equipo.map(m => `Hola, ${m}!`);
   const saludo   = `Hola, ${nombre}!`;
 

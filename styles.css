@@ -401,6 +401,40 @@ body {
   font-family: var(--font-mono);
 }
 
+/* ===== ESTADÍSTICAS - CUERPO ===== */
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.stat-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  text-align: center;
+  transition: transform .2s, border-color .2s;
+}
+
+.stat-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent);
+}
+
+.stat-card h3 {
+  font-size: 2rem;
+  color: var(--accent-2);
+  margin-bottom: 8px;
+}
+
+.stat-card p {
+  color: var(--text-muted);
+  font-size: .9rem;
+}
+
 /* --- FOOTER --- */
 footer {
   background: var(--bg-2);

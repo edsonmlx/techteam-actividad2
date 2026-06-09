@@ -3,14 +3,15 @@
 =============================================
  TECHTEAM — app.py
  Actividad #2 | Backend Python
- Edson Mamani Laura & Jose Ventura Poma
+ Edson Mamani Laura, Angel Jasmany Vargas Mamani & Jose Ventura Poma
 =============================================
 """
 
 # --- Lista del equipo del proyecto ---
 EQUIPO = [
     {"nombre": "Edson Mamani Laura",  "rol": "Líder del Proyecto",  "rama": "feature/ENCABEZADO"},
-    {"nombre": "Jose Ventura Poma",   "rol": "Colaborador 1",       "rama": "feature/CUERPO"},
+    {"nombre": "Angel Jasmany Vargas Mamani",   "rol": "Colaborador 1", "rama": "feature/CUERPO"},
+    {"nombre": "Jose Ventura Poma",   "rol": "Colaborador 2",       "rama": "feature/PIE-PAGINA"},
 ]
 
 
