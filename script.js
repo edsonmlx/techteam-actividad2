@@ -38,7 +38,7 @@ function ejecutarPython() {
   }
 
   // Simular el código Python de app.py
-  const equipo = ["Edson Mamani", "Jose Ventura"];
+  const equipo = ["Edson Mamani", "Jose Ventura","Angel Vargas"];
   const mensajes = equipo.map(m => `Hola, ${m}!`);
   const saludo   = `Hola, ${nombre}!`;
 

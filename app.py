@@ -11,6 +11,7 @@
 EQUIPO = [
     {"nombre": "Edson Mamani Laura",  "rol": "Líder del Proyecto",  "rama": "feature/ENCABEZADO"},
     {"nombre": "Jose Ventura Poma",   "rol": "Colaborador 1",       "rama": "feature/CUERPO"},
+    {"nombre": "Angel vargas Mamani",   "rol": "Colaborador 2",       "rama": "app.py"},
 ]
 
 
@@ -27,6 +28,7 @@ def mostrar_equipo() -> None:
     for miembro in EQUIPO:
         print(f"\n  👤 {miembro['nombre']}")
         print(f"     Rol   : {miembro['rol']}")
+        print(f"     Rama  : {miembro['rama']}")
         print(f"     Rama  : {miembro['rama']}")
     print("\n" + "=" * 45)
 
